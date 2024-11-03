@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(hi.jpg);
+            background-repeat: no-repeat;
+            background-attachment:local;
+            background-size: cover;
+        }
+.immg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+img{
+    transition: transform 2s ease-in-out ;
+}
+.immg2 img{
+height: 92vh;
+width: 45vw;
+position:absolute;
+top: 0;
+right:-560px;
+overflow: hidden;
+}
+ .immg img:hover{
+transform: rotate(345deg) translate(44px);
+
+}
+.immg1 img:hover{
+transform: translate(1000px , 200px) rotate(360deg);
+}
+.immg2 img:hover{
+    transform: translate(-370px);
+
+}
+    </style>
+    
+<body>
+   
+    <div class="immg">
+    <img src="dew-removebg-preview.png" alt="img">
+</div>
+<div class="immg1">
+    <!-- <img src="walk-removebg-preview.png" alt="img"> -->
+    <img src="walk-removebg-preview.png" alt="img">
+
+</div>
+<div class="immg2">
+    <img src="tree-removebg-preview.png" alt="img">
+</div>
+<model-viwer id="car" scr="./nisa">
+
+</model-viwer>
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+
+</head>
+</body>
+</html>
